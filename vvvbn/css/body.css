@@ -1,0 +1,26 @@
+body {
+    position: absolute;
+    min-width: 710px;
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div#contents {
+    display: grid;
+    min-width: 700px;
+    justify-content: center;
+    padding: 1rem;
+}
+
+div#contents > div {
+    margin: 0 auto;
+}
+
+div.showable {
+    display: none;
+    width: 100%;
+}

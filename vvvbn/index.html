@@ -2,48 +2,56 @@
 <html lang="de">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VVV-BN</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/heading.css">
-  <link rel="stylesheet" href="css/articles.css">
-  <link rel="stylesheet" href="css/bottom.css">
-  <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+    <title>VVV-BN</title>
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/wandern.css">
+    <link rel="stylesheet" href="css/bottom.css">
 
-  <meta name="theme-color" content="#fafafa">
+    <script src="js/showdown.min-2.1.0.js"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npmx/showdown/dist/showdown.min.js"></script>
+    -->
 
-  <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <meta name="description" content="">
 
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
 </head>
 
 <body>
 
-  <div id="content">
+    <div load="aside.html" id="aside"></div>
+    <div load="header.html"></div>
 
-    <div load="heading.html"></div>
+    <div id="contents">
+        <div load="vvv.html" id="vvv" class="showable" style="display: block;"></div>
+        <div load="neues.html" id="neues" class="showable"></div>
+        <div load="wandern.html" id="wandern" class="showable" style="display: none;"></div>
+        <div load="vergangenes.html" id="vergangenes" class="showable" style="display: none;"></div>
+        <div load="verein.html" id="verein" class="showable" style="display: none;"></div>
+        <div load="bn.html" id="bn" class="showable" style="display: none;"></div>
+    </div>
 
-    <div load="vvv.html"></div>
-    <div load="neues.html"></div>
-    <div load="wandern.html"></div>
-    <div load="vergangenes.html"></div>
-    <div load="verein.html"></div>
+    <div id="bottom" load="bottom.html"></div>
 
-    <div load="bottom.html"></div>
-
-  </div>
-
-  <script src="js/app.js"></script>
-
+    <script src="js/images.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
