@@ -1,0 +1,23 @@
+div#bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid black;
+}
+
+div#bottom > div {
+    margin: 0 1rem 1rem;
+}
+
+div#bottom > div > a {
+    text-decoration: none;
+}
+
+div#bottom > div > a:visited {
+    color: inherit;
+}
+
+div#bottom img {
+    display: inline;
+    width: 100%;
+}
+
