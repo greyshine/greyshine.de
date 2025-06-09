@@ -11,9 +11,9 @@ aside {
 
 aside > div {
     background-color: #000000;
-    width: 25%;
     height: 100%;
-    min-width: 14rem;
+    min-width: 30%;
+    max-width: 35%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-right: .5rem;

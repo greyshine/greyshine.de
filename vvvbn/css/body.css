@@ -1,23 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    position: absolute;
+body > * {
+    margin: 0 auto;
     min-width: 400px;
-    min-height: 100%;
-}
-
-div#contents > div, header  {
     max-width: 1000px;
+    min-height: 100%;
 }
 
 div#contents {
     display: grid;
-    min-width: 400px;
     justify-content: center;
-    padding: 1rem;
 }
 
 div#contents > div {
