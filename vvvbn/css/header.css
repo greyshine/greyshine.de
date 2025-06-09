@@ -1,10 +1,33 @@
 header {
-    display: block;
+    display: grid;
+    min-width: 410px;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    grid-template-areas:
+    "headerLeft headerRight";
 }
 
-header img#logo {
-    margin-top: -2rem;
+header div.headerLeft {
+    grid-area: headerLeft;
+}
+
+header div.headerRight {
+    grid-area: headerRight;
+    justify-self: end;
+}
+
+header div.headerLeft img#logo {
+    margin-top: -1rem;
     margin-bottom: -2rem;
-    margin-left: -1rem;
-    width: 15rem;
+    width: 8rem;
+}
+
+header div.headerRight img#burger {
+    width: 2rem;
+    cursor: pointer;
+    margin-top: .5rem;
+    margin-right: .5rem;
 }

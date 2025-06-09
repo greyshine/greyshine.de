@@ -1,5 +1,7 @@
 const images = function() {
 
+    const defaultRotateMillis = 6500;
+
     const arrowStyle =
         /*'position: relative; ' +
         'top: -4rem; ' +
@@ -77,12 +79,17 @@ const images = function() {
             } );
             imageTags.item(displayedIndex).style.display = 'inherit';
 
+            const rotateInterval = parseInt(imagesTag.getAttribute('rotate'));
+            const timeout = isNaN(rotateInterval) || rotateInterval < 1 ? defaultRotateMillis : rotateInterval * 1000;
+
+            console.log( 'rotate', timeout, imagesTag.getAttribute('timeout'),  isNaN(rotateInterval) )
+
             setInterval( ()=>{
                 if ( !isPlaying ) { return; }
                 imageTags.item(displayedIndex).style.display = 'none';
                 displayedIndex = displayedIndex === imageTags.length-1 ? -1 : displayedIndex;
                 imageTags.item(++displayedIndex).style.display = 'inherit';
-            }, 6500 );
+            }, timeout );
         }
     }
 

@@ -1,12 +1,5 @@
-div#aside img#burger {
-    position: absolute;
-    width: 2rem;
-    cursor: pointer;
-    top: 1rem;
-    right: 1rem;
-}
-
 aside {
+    z-index: 1000;
     display: none;
     position: fixed;
     top: 0;
@@ -30,14 +23,15 @@ aside  > div > img {
     height: 3rem;
 }
 
-aside > div> ul {
+aside > div > ul {
     list-style: none;
     border-top: 1px solid white;
+    padding-left: 3rem;
 }
 
 aside > div> ul > li {
     list-style: none;
-    color: green;
+    color: lightgreen;
     cursor: pointer;
     padding: 1rem 0 1rem;
     border-bottom: 1px solid white;

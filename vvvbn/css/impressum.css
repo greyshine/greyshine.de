@@ -1,0 +1,19 @@
+div#impressum div.markdown p {
+    font-size: .8rem;
+}
+
+div#impressum h1, div#impressum h2 {
+    margin: 1rem 0 0;
+}
+
+div#impressum h1 {
+    font-size: 1rem;
+}
+
+div#impressum h2 {
+    font-size: .8rem;
+}
+
+div#impressum ul li {
+    font-size: .8rem;
+}
