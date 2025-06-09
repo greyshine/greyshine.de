@@ -1,9 +1,7 @@
 article {
     margin: 1rem 0;
     padding: .5rem 0;
-    width: 95%;
-    max-width: 1000px;
-    min-width: 700px;
+    min-width: 400px;
     border-top: 1px solid gray;
 }
 

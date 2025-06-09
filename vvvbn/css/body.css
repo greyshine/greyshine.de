@@ -1,17 +1,21 @@
-body {
-    position: absolute;
-    min-width: 710px;
-    min-height: 100%;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    position: absolute;
+    min-width: 400px;
+    min-height: 100%;
+}
+
+div#contents > div, header  {
+    max-width: 1000px;
+}
+
 div#contents {
     display: grid;
-    min-width: 700px;
+    min-width: 400px;
     justify-content: center;
     padding: 1rem;
 }
@@ -20,7 +24,21 @@ div#contents > div {
     margin: 0 auto;
 }
 
+div#contents > div img {
+    margin: 1rem auto;
+    display: block;
+    width: 98%;
+}
+
 div.showable {
     display: none;
     width: 100%;
+}
+
+img.rounded {
+    border-radius: 5px;
+}
+
+ul {
+    margin-left: 1rem;
 }

@@ -13,31 +13,32 @@
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/vvv.css">
+    <link rel="stylesheet" href="css/impressum.css">
     <link rel="stylesheet" href="css/wandern.css">
     <link rel="stylesheet" href="css/bottom.css">
 
+    <!-- https://showdownjs.com -->
     <script src="js/showdown.min-2.1.0.js"></script>
-    <!--
-    <script src="https://cdn.jsdelivr.net/npmx/showdown/dist/showdown.min.js"></script>
-    -->
 
-    <meta name="description" content="">
+    <meta name="description" content="Der ">
 
-    <meta property="og:title" content="">
+    <meta property="og:title" content="Verkehrs- und Verschönerungsverein Bergisch Neukirchen">
     <meta property="og:type" content="">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="www.vvv-bn.de">
     <meta property="og:image" content="">
     <meta property="og:image:alt" content="">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <!--link rel="icon" href="/icon.svg" type="image/svg+xml"-->
+    <!--link rel="apple-touch-icon" href="icon.png"-->
 </head>
 
 <body>
 
     <div load="aside.html" id="aside"></div>
-    <div load="header.html"></div>
+
+    <header load="header.html"></header>
 
     <div id="contents">
         <div load="vvv.html" id="vvv" class="showable" style="display: block;"></div>
@@ -46,6 +47,7 @@
         <div load="vergangenes.html" id="vergangenes" class="showable" style="display: none;"></div>
         <div load="verein.html" id="verein" class="showable" style="display: none;"></div>
         <div load="bn.html" id="bn" class="showable" style="display: none;"></div>
+        <div load="docs/impressum.md" id="impressum" class="showable" style="display: none;"></div>
     </div>
 
     <div id="bottom" load="bottom.html"></div>

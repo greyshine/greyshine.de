@@ -71,6 +71,10 @@ function replace(htmlElement) {
         es.push(articleElm);
     }
 
+    for( const headerElm of htmlElement.getElementsByTagName('header') ) {
+        es.push(headerElm);
+    }
+
     for(let i=0, l=es.length; i<l; i++) {
         applyReplacements(es[i]);
     }
