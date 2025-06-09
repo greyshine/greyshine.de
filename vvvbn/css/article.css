@@ -1,25 +1,19 @@
 article {
     margin: 1rem 0;
     padding: .5rem 0;
-    min-width: 400px;
     border-top: 1px solid gray;
 }
 
-article:first-child {
-    margin-top: 0;
-}
-
-article:last-child {
-    margin-top: 0;
+article > *:not(:first-child) {
+    margin-top: 1rem;
 }
 
 article > div.info {
     font-style: italic;
-    margin-bottom: 1rem;
 }
 
 article img {
     margin: 1rem auto;
     display: block;
-    width: 98%;
+    border-radius: 5px;
 }

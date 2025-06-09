@@ -1,8 +1,7 @@
 header {
     display: grid;
-    min-width: 410px;
-    margin: 0 auto;
-
+    margin: 0 auto 0;
+    padding: .3rem 0 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0 0;
