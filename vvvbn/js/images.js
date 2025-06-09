@@ -3,10 +3,6 @@ const images = function() {
     const defaultRotateMillis = 6500;
 
     const arrowStyle =
-        /*'position: relative; ' +
-        'top: -4rem; ' +
-        'left: .5rem; ' +
-        */
         'margin-left: .5rem; ' +
         'border: 2px solid black; ' +
         'border-radius: 15px; ' +
@@ -25,8 +21,6 @@ const images = function() {
     const scannedItems = [];
 
     function scan() {
-
-        //console.log('scanning <images>...');
 
         for(const imagesTag of document.body.querySelectorAll('images') ) {
 
@@ -81,8 +75,6 @@ const images = function() {
 
             const rotateInterval = parseInt(imagesTag.getAttribute('rotate'));
             const timeout = isNaN(rotateInterval) || rotateInterval < 1 ? defaultRotateMillis : rotateInterval * 1000;
-
-            console.log( 'rotate', timeout, imagesTag.getAttribute('timeout'),  isNaN(rotateInterval) )
 
             setInterval( ()=>{
                 if ( !isPlaying ) { return; }
