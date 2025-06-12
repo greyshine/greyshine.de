@@ -39,7 +39,7 @@ function scanObservables(node) {
     replace( document );
 })();
 
-function applyAdditions(node) {
+function applyAdditions() {
     if (images) {
         images.scan();
     }
@@ -124,7 +124,6 @@ function applyReplacements(node) {
                 replace( node );
             });
     }
-
 }
 
 function showMenu() {
