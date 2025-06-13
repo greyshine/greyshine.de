@@ -1,5 +1,9 @@
 ## Historisches zu Bergisch Neukirchen
 
+
+FAKKEL
+
+
 Im __9. oder 10. Jahrhundert__ erfolgte die Gründung des Ortes Neukirchen und ca. __1150__ ein erster Kirchbau. Im Jahre __1223__ war die erste urkundliche Erwähnung von Neukirchen. Politisch gehörte der Ort seit __1360__ zum Amt Miselohe im Herzogtum Berg.
 
 
