@@ -1,19 +1,31 @@
 article {
-    margin: 1rem 0;
-    padding: .5rem 0;
+    padding-top: 1rem;
     border-top: 1px solid gray;
 }
 
-article > *:not(:first-child) {
+article:not(:first-child) {
     margin-top: 1rem;
 }
 
-article > div.info {
-    font-style: italic;
+article h2 {
+    margin: 1.5rem 0 0;
 }
 
+article p {
+    margin-top: 1rem;
+}
+
+article div.images-menu {
+    margin-bottom: 2.5rem;
+}
+
+/*
+Evtl. so gestalten (css) wie vvv.html/vvv.css
+https://www.perplexity.ai/search/b72b5e96-ec80-41d4-994b-f3348f1ebe2b#3
+*/
 article img {
     margin: 1rem auto;
     display: block;
     border-radius: 5px;
+    width: 98%;
 }

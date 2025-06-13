@@ -1,3 +1,7 @@
+loader.addPlugin( ()=>{
+    images.scan();
+} );
+
 const images = function() {
 
     const defaultRotateMillis = 6500;
@@ -36,7 +40,7 @@ const images = function() {
             const btnPlay = parser.parseFromString(play, "text/html").body.firstChild;
             const btnPause = parser.parseFromString(pause, "text/html").body.firstChild;
 
-            const navDiv = parser.parseFromString('<div/>', "text/html").body.firstChild;
+            const navDiv = parser.parseFromString('<div class="images-menu"/>', "text/html").body.firstChild;
             navDiv.append( btnLeft );
             navDiv.append( btnPlay );
             navDiv.append( btnPause );

@@ -1,13 +1,11 @@
-<aside id="menu" onclick="toggleMenu(false)">
-    <div>
-        <img src="img/vvvbn-logo.png" alt="VVV-BN" />
-        <ul>
-            <li onclick="clickMenue('vvv')">VVV-BN</li>
-            <li onclick="clickMenue('neues')">Aktuelles</li>
-            <li onclick="clickMenue('wandern')">Wanderwege</li>
-            <li onclick="clickMenue('vergangenes')">Vergangenes</li>
-            <li onclick="clickMenue('verein')">Verein</li>
-            <li onclick="clickMenue('bn')">Bergisch Neukirchen</li>
-        </ul>
-    </div>
-</aside>
+<div onclick="aside.hide()">
+    <img src="img/vvvbn-logo.png" alt="VVV-BN" />
+    <ul>
+        <li onclick="aside.link('vvv')">VVV-BN</li>
+        <li onclick="aside.link('aktuelles')">Aktuelles</li>
+        <li onclick="aside.link('wandern')">Wanderwege</li>
+        <li onclick="aside.link('vergangenes')">Vergangenes</li>
+        <li onclick="aside.link('verein')">Verein</li>
+        <li onclick="aside.link('bn')">Bergisch Neukirchen</li>
+    </ul>
+</div>

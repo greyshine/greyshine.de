@@ -7,8 +7,8 @@ Anschließend haben wir die Aktion bei Getränken und Gebäck gemeinsam auskling
 Wir danken herzlich allen, die so tatkräftig mit angepackt haben – besonders unseren kleinen Helferinnen und Helfern, die mit großem Eifer dabei waren.
 
 <images>
-    <img src="docs/neues/20250301-imgs/image1.jpg" />
-    <img src="docs/neues/20250301-imgs/image2.jpg" />
-    <img src="docs/neues/20250301-imgs/image3.jpg" />
-    <img src="docs/neues/20250301-imgs/image4.jpg" />
+    <img src="docs/aktuelles/20250301-imgs/image1.jpg" />
+    <img src="docs/aktuelles/20250301-imgs/image2.jpg" style="display: none;"/>
+    <img src="docs/aktuelles/20250301-imgs/image3.jpg" style="display: none;"/>
+    <img src="docs/aktuelles/20250301-imgs/image4.jpg" style="display: none;"/>
 </images>

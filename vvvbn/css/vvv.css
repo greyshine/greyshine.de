@@ -1,17 +1,18 @@
-div#vvv images > div {
-    height: 275px;
-    overflow: hidden;
-    position: relative;
-    background-color: white;
+div#vvv div.images-container {
+    height: 12rem;
+    width: 95%;
+    display: flex;
+    align-items: center;        /* Vertical centering */
+    justify-content: center;    /* Horizontal centering (optional) */
+    overflow: hidden;           /* Prevents image overflow */
     border-radius: 5px;
 }
 
-div#vvv images > div > img {
-    margin-top: 0rem;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;        /* Crop to fill container */
-    object-position: center;  /* Center the crop (change as needed) */
+div#vvv div.images-container img {
+    margin: 0 auto;
+    max-height: 100%;           /* Never exceeds container's height */
+    max-width: 100%;            /* Responsive: won't overflow width */
+    height: auto;
+    width: auto;
     display: block;
-    border-radius: 5px;
 }
