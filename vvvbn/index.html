@@ -1,30 +1,14 @@
 <!doctype html>
 <html lang="de">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fafafa">
 
-    <title>VVV-BN</title>
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/aside.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/article.css">
-    <link rel="stylesheet" href="css/vvv.css">
-    <link rel="stylesheet" href="css/impressum.css">
-    <link rel="stylesheet" href="css/wandern.css">
-    <link rel="stylesheet" href="css/bottom.css">
-
-    <!-- https://showdownjs.com -->
-    <script src="js/showdown.min-2.1.0.js"></script>
-
-    <meta name="description" content="Der Verkehrs- und Verschönerungsverein Bergisch Neukirchen">
+    <meta name="description" content="Website des Verkehrs- und Verschönerungsverein Bergisch Neukirchen">
 
     <meta property="og:title" content="Verkehrs- und Verschönerungsverein Bergisch Neukirchen">
-    <meta property="og:type" content="">
+    <meta property="og:type" content="Website des Verkehrs- und Verschönerungsverein Bergisch Neukirchen">
     <meta property="og:url" content="www.vvv-bn.de">
     <meta property="og:image" content="">
     <meta property="og:image:alt" content="">
@@ -34,28 +18,40 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-</head>
 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/markdown.css">
+    <link rel="stylesheet" href="css/vvv.css">
+    <link rel="stylesheet" href="css/wandern.css">
+
+    <title>VVV-BN</title>
+
+    <script src="js/showdown.min-2.1.0.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/aside.js"></script>
+    <script src="js/images.js"></script>
+</head>
 <body>
 
-    <div load="aside.html" id="aside"></div>
+    <aside load="aside.html" onclick="aside.hide();"></aside>
 
     <header load="header.html"></header>
 
-    <div id="contents">
-        <div load="vvv.html" id="vvv" class="showable" style="display: block;"></div>
-        <div load="neues.html" id="neues" class="showable"></div>
-        <div load="wandern.html" id="wandern" class="showable" style="display: none;"></div>
-        <div load="vergangenes.html" id="vergangenes" class="showable" style="display: none;"></div>
-        <div load="verein.html" id="verein" class="showable" style="display: none;"></div>
-        <div load="bn.html" id="bn" class="showable" style="display: none;"></div>
-        <div load="docs/impressum.md" id="impressum" class="showable" style="display: none;"></div>
-    </div>
+    <main>
+        <div id="vvv" style="display: inherit;" load="docs/vvv/vvv.html" class="showable"></div>
+        <div id="aktuelles" style="display: none;" load="docs/aktuelles/aktuelles.html" class="showable"></div>
+        <div id="vergangenes" style="display: none;" load="docs/vergangenes/vergangenes.html" class="showable"></div>
+        <div id="wandern" style="display: none;" load="docs/wandern/wandern.html" class="showable"></div>
+        <div id="verein" style="display: none;" load="docs/verein/verein.html" class="showable"></div>
+        <div id="bn" style="display: none;" load="docs/bn/bn.html" class="showable"></div>
+        <article id="impressum" style="display: none;" load="docs/impressum.md" class="showable"></article>
+    </main>
 
-    <div id="bottom" load="bottom.html"></div>
+    <footer load="footer.html"></footer>
 
-    <script src="js/images.js"></script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>
