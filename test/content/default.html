@@ -1,0 +1,50 @@
+<div>
+    <p>
+        This is a simple frontend / html framework for building mobile friendly very simple pages.
+    </p>
+    <p>
+        Idea is to simply structure the content on the file system.
+    </p>
+    <p>
+        Plus:
+    <ul>
+        <li>
+            <p>Also there is some routing like for 'webaddress.com/someRoute.<br/>
+            (Only works when delivered by  a server / not from file system due to CORS)</p>
+        </li>
+        <li>
+            <p>
+                An easy image caroussel.
+            </p>
+        </li>
+        <li>
+            <p>
+                Tracking of the visitors. (Available as Java Server Feature)
+            </p>
+        </li>
+    </ul>
+    </p>
+</div>
+
+<div>
+    <p>
+        <span class="alert">Be cautious!</span><br/>
+        Regular tags used in the body part must always be opening and closing though their content is empty!
+
+        <div class="code">
+            &lt;tag&gt;&lt;/tag&gt;
+        </div>
+
+        instead of
+
+        <div class="code bgLightRed">
+            &lt;/tag&gt;
+        </div>
+
+    </p>
+    <p>
+        This is due to javascript handling and parsing the DOM.<br/>
+        Not following that hint may result in confusing element order when sub parts are dynamically loaded.<br/>
+        I did not find a solution for that yet.
+    </p>
+</div>

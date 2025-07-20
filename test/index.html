@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TEST</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="js/showdown.min-2.1.0.js"></script>
+        <script src="js/trckr.js"></script>
+        <script src="js/loader.js"></script>
+        <script src="js/router.js"></script>
+
+        <script>
+            window.onload = ()=>{
+                tracker.init('http://localhost:8080/api/trckr');
+                router.init(
+                    [
+                        {
+                            name: '/',
+                            file: 'content/default.html'
+                        },
+                        {
+                            name: '/include',
+                            file: 'content/include-direct.md'
+                        },
+                        {
+                            name: '/markdown',
+                            file: 'content/markdown.md'
+                        },
+                        {
+                            name: '/routing',
+                            file: 'content/routing.md'
+                        },
+                        {
+                            name: '/images',
+                            file: 'content/images.html'
+                        },
+                        {
+                            name: '/tracking',
+                            file: 'content/tracking.html'
+                        }
+                    ]
+                );
+
+                loader.init();
+            }
+        </script>
+    </head>
+    <body>
+
+        <nav style="display: flex;">
+            <a route="/">Home</a>
+            <a route="/include">Loading / Lazy</a>
+            <a route="/markdown">Markdown</a>
+            <a route="/routing">Routing</a>
+            <a route="/images">Images / Image Roller</a>
+            <a route="/tracking">Tracking</a>
+        </nav>
+
+        <h1>SiFF - Simple Frontend Framework</h1>
+
+        <div id="routes">
+            <route />
+        </div>
+    </body>
+
+
+</html>
