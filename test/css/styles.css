@@ -1,0 +1,107 @@
+* {
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1rem;
+}
+
+body > nav {
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+
+body > nav > *:not(:first-child) {
+    margin-left: 1rem;
+}
+
+body > nav > * {
+    padding: .3rem;
+    cursor: pointer;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: .3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: .2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: .1rem;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin: .5rem auto;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+p:not(:first-child) {
+    margin-top: 1rem;
+}
+
+div.code {
+    font-family: "Courier New";
+    margin: .5rem auto;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+code {
+    font-family: "Courier New", sans-serif;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.mt-0-5 {
+    margin-top: .5rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+
+.bgLightRed {
+    background-color: rgba(255, 84, 84, 0.2);
+}
+
+.alert, .warn {
+    font-weight: bold;
+    color: indianred;
+}
+
+div.green {
+    color: green;
+}
+
+div.bold {
+    font-weight: bold;
+}
+
+div#routes {
+    margin: auto auto;
+}
